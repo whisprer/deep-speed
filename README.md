@@ -1,3 +1,27 @@
+[README.md]
+
+# Deep-Speed
+
+<p align="center">
+  <a href="https://github.com/whisprer/deep-speed/releases"> 
+    <img src="https://img.shields.io/github/v/release/whisprer/deep-speed?color=4CAF50&label=release" alt="Release Version"> 
+  </a>
+  <a href="https://github.com/whisprer/deep-speed/actions"> 
+    <img src="https://img.shields.io/github/actions/workflow/status/whisprer/deep-speed/lint-and-plot.yml?label=build" alt="Build Status"> 
+  </a>
+</p>
+
+![Commits](https://img.shields.io/github/commit-activity/m/whisprer/deep-speed?label=commits) 
+![Last Commit](https://img.shields.io/github/last-commit/whisprer/deep-speed) 
+![Issues](https://img.shields.io/github/issues/whisprer/deep-speed) 
+[![Version](https://img.shields.io/badge/version-3.1.1-blue.svg)](https://github.com/whisprer/deep-speed) 
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)](https://www.microsoft.com/windows)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+<p align="center">
+  <img src="deep-speed-banner.png" width="850" alt="Deep-Speed Banner">
+
 [![License Apache 2.0](https://badgen.net/badge/license/apache2.0/blue)](https://github.com/Microsoft/DeepSpeed/blob/master/LICENSE)
 [![PyPI version](https://badge.fury.io/py/deepspeed.svg)](https://pypi.org/project/deepspeed/)
 [![Downloads](https://static.pepy.tech/badge/deepspeed)](https://pepy.tech/project/deepspeed)
@@ -5,7 +29,6 @@
 [![Twitter](https://img.shields.io/twitter/follow/MSFTDeepSpeed)](https://twitter.com/intent/follow?screen_name=MSFTDeepSpeed)
 [![Japanese Twitter](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9ETwitter-%40MSFTDeepSpeedJP-blue)](https://twitter.com/MSFTDeepSpeedJP)
 [![Chinese Zhihu](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-%E5%BE%AE%E8%BD%AFDeepSpeed-blue)](https://www.zhihu.com/people/deepspeed)
-
 
 <div align="center">
  <img src="docs/assets/images/DeepSpeed_light.svg#gh-light-mode-only" width="400px">
@@ -40,7 +63,6 @@
 
 <img src="docs/assets/images/DeepSpeed-pillars.png" width="800px">
 
-
 ## DeepSpeed-Training
 
 DeepSpeed offers a confluence of system innovations, that has made large scale DL training effective, and efficient, greatly improved ease of use, and redefined the DL training landscape in terms of scale that is possible. These innovations such as ZeRO, 3D-Parallelism, DeepSpeed-MoE, ZeRO-Infinity, etc. fall under the training pillar. Learn more: [DeepSpeed-Training](https://www.deepspeed.ai/training/)
@@ -48,7 +70,6 @@ DeepSpeed offers a confluence of system innovations, that has made large scale D
 ## DeepSpeed-Inference
 
 DeepSpeed brings together innovations in parallelism technology such as tensor, pipeline, expert and ZeRO-parallelism, and combines them with high performance custom inference kernels, communication optimizations and heterogeneous memory technologies to enable inference at an unprecedented scale, while achieving unparalleled latency, throughput and cost reduction. This systematic composition of system technologies for inference falls under the inference pillar. Learn more: [DeepSpeed-Inference](https://www.deepspeed.ai/inference)
-
 
 ## DeepSpeed-Compression
 
@@ -99,7 +120,11 @@ DeepSpeed has been used to train many different large-scale models, below is a l
 DeepSpeed has been integrated with several different popular open-source DL frameworks such as:
 
 |                                                                                                | Documentation                                |
-| ---------------------------------------------------------------------------------------------- | -------------------------------------------- |
+|
+
+- |
+
+-- |
 <img src="docs/assets/images/transformers-light.png#gh-light-mode-only" width="250px"><img src="docs/assets/images/transformers-dark.png#gh-dark-mode-only" width="250px"> | [Transformers with DeepSpeed](https://huggingface.co/docs/transformers/main/main_classes/deepspeed) |
 | <img src="docs/assets/images/accelerate-light.png#gh-light-mode-only" width="250px"><img src="docs/assets/images/accelerate-dark.png#gh-dark-mode-only" width="250px"> | [Accelerate with DeepSpeed](https://huggingface.co/docs/accelerate/usage_guides/deepspeed) |
 | <img src="docs/assets/images/lightning-light.svg#gh-light-mode-only" width="200px"><img src="docs/assets/images/lightning-dark.svg#gh-dark-mode-only" width="200px"> | [Lightning with DeepSpeed](https://lightning.ai/docs/pytorch/stable/advanced/model_parallel.html#deepspeed) |
@@ -112,7 +137,11 @@ DeepSpeed has been integrated with several different popular open-source DL fram
 # Build Pipeline Status
 
 | Description | Status |
-| ----------- | ------ |
+|
+
+-- |
+
+|
 | NVIDIA | [![nv-torch110-p40](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-torch110-p40.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-torch110-p40.yml) [![nv-torch110-v100](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-torch110-v100.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-torch110-v100.yml) [![nv-torch-latest-v100](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-torch-latest-v100.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-torch-latest-v100.yml) [![nv-h100](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-h100.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-h100.yml) [![nv-inference](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-inference.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-inference.yml) [![nv-nightly](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-nightly.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-nightly.yml) |
 | AMD | [![amd-mi100](https://github.com/microsoft/DeepSpeed/actions/workflows/amd-mi100.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/amd-mi100.yml) [![amd-mi200](https://github.com/microsoft/DeepSpeed/actions/workflows/amd-mi200.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/amd-mi200.yml) |
 | CPU | [![nv-torch-latest-cpu](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-torch-latest-cpu.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-torch-latest-cpu.yml) |
@@ -171,15 +200,17 @@ Please checkout [DeepSpeed-Training](https://www.deepspeed.ai/training), [DeepSp
 
 All DeepSpeed documentation, tutorials, and blogs can be found on our website: [deepspeed.ai](https://www.deepspeed.ai/)
 
-
 |                                                                                                | Description                                  |
-| ---------------------------------------------------------------------------------------------- | -------------------------------------------- |
+|
+
+- |
+
+-- |
 | [Getting Started](https://www.deepspeed.ai/getting-started/)                                   |  First steps with DeepSpeed                  |
 | [DeepSpeed JSON Configuration](https://www.deepspeed.ai/docs/config-json/)                     |  Configuring DeepSpeed                       |
 | [API Documentation](https://deepspeed.readthedocs.io/en/latest/)                               |  Generated DeepSpeed API documentation       |
 | [Tutorials](https://www.deepspeed.ai/tutorials/)                                               |  Tutorials                                   |
 | [Blogs](https://www.deepspeed.ai/posts/)                                                       |  Blogs                                   |
-
 
 # Contributing
 DeepSpeed welcomes your contributions! Please see our
@@ -236,8 +267,6 @@ Conduct](https://opensource.microsoft.com/codeofconduct/). For more information 
 25. Zhewei Yao, Reza Yazdani Aminabadi, Olatunji Ruwase, Samyam Rajbhandari, Xiaoxia Wu, Ammar Ahmad Awan, Jeff Rasley, Minjia Zhang, Conglong Li, Connor Holmes, Zhongzhu Zhou, Michael Wyatt, Molly Smith, Lev Kurilenko, Heyang Qin, Masahiro Tanaka, Shuai Che, Shuaiwen Leon Song, Yuxiong He. (2023) DeepSpeed-Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales [arXiv:2308.01320](https://arxiv.org/abs/2308.01320).
 26. Xiaoxia Wu, Zhewei Yao, Yuxiong He. (2023) ZeroQuant-FP: A Leap Forward in LLMs Post-Training W4A8 Quantization Using Floating-Point Formats [arXiv:2307.09782](https://arxiv.org/abs/2307.09782)
 27. Zhewei Yao, Xiaoxia Wu, Conglong Li, Minjia Zhang, Heyang Qin, Olatunji Ruwase, Ammar Ahmad Awan, Samyam Rajbhandari, Yuxiong He. (2023) DeepSpeed-VisualChat: Multi-Round Multi-Image Interleave Chat via Multi-Modal Causal Attention [arXiv:2309.14327](https://arxiv.org/pdf/2309.14327.pdf)
-
-
 
 # Videos
 1. DeepSpeed KDD 2020 Tutorial
